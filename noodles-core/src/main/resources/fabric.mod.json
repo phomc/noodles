@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "noodles-core",
+  "name": "Noodles Core",
+  "version": "${version}",
+  "environment": "*",
+  "license": "MIT",
+  "authors": [
+    "PhoMC"
+  ],
+  "depends": {
+    "java": ">=17"
+  },
+  "entrypoints": {
+    "main": [
+      "dev.phomc.noodles.NoodlesMod"
+    ]
+  },
+  "mixins": [
+    "noodles-core.mixins.json"
+  ],
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/class_1927": [
+        "dev/phomc/noodles/api/explosion/NoodlesExplosion"
+      ]
+    }
+  }
+}
