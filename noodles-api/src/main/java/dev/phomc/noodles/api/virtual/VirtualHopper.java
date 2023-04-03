@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package dev.phomc.noodles.api.virtual;
 
 import org.jetbrains.annotations.NotNull;
@@ -37,17 +38,20 @@ public interface VirtualHopper extends Hopper {
 		return true;
 	}
 
-	@NotNull @Override
+	@NotNull
+	@Override
 	default ItemStack getItem(int slot) {
 		return ItemStack.EMPTY;
 	}
 
-	@NotNull @Override
+	@NotNull
+	@Override
 	default ItemStack removeItem(int slot, int amount) {
 		return ItemStack.EMPTY;
 	}
 
-	@NotNull @Override
+	@NotNull
+	@Override
 	default ItemStack removeItemNoUpdate(int slot) {
 		return ItemStack.EMPTY;
 	}

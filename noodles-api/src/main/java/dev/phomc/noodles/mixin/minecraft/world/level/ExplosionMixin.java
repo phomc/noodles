@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package dev.phomc.noodles.mixin.minecraft.world.level;
 
 import java.util.List;
@@ -37,8 +38,10 @@ import dev.phomc.noodles.api.explosion.NoodlesExplosion;
 public class ExplosionMixin implements NoodlesExplosion {
 	@Shadow
 	@Final
-	@Nullable private Entity source;
-	@Unique private boolean affectSourceEntity, affectEntities, affectPlayers;
+	@Nullable
+	private Entity source;
+	@Unique
+	private boolean affectSourceEntity, affectEntities, affectPlayers;
 
 	@Redirect(method = "explode",
 			at = @At(

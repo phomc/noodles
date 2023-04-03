@@ -76,7 +76,7 @@ allprojects {
 
     spotless {
         java {
-            importOrder("java|javax","","net.minecraft","net.fabricmc","dev.phomc","\\#")
+            importOrder("java|javax", "", "net.minecraft", "net.fabricmc", "dev.phomc", "\\#")
 
             removeUnusedImports()
             cleanthat()
