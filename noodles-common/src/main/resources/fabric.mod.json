@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "noodles-common",
+  "name": "Noodles Common",
+  "version": "${version}",
+  "environment": "*",
+  "license": "Apache-2.0",
+  "authors": [
+    "PhoMC"
+  ],
+  "depends": {
+    "java": ">=17"
+  },
+  "entrypoints": {
+  },
+  "accessWidener": "noodles-common.accesswidener"
+}

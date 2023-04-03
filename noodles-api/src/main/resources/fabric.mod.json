@@ -4,7 +4,7 @@
   "name": "Noodles Core",
   "version": "${version}",
   "environment": "*",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "authors": [
     "PhoMC"
   ],
@@ -17,8 +17,9 @@
     ]
   },
   "mixins": [
-    "noodles-core.mixins.json"
+    "noodles-api.mixins.json"
   ],
+  "accessWidener": "noodles-api.accesswidener",
   "custom": {
     "loom:injected_interfaces": {
       "net/minecraft/class_1927": [

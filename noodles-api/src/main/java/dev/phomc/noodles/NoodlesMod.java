@@ -15,9 +15,19 @@
  */
 package dev.phomc.noodles;
 
+import org.jetbrains.annotations.NotNull;
+
+import net.minecraft.resources.ResourceLocation;
+
 import net.fabricmc.api.ModInitializer;
 
 public class NoodlesMod implements ModInitializer {
+	public static final String MOD_ID = "noodles";
+
+	public static @NotNull ResourceLocation loc(@NotNull String name) {
+		return new ResourceLocation(MOD_ID, name);
+	}
+
 	@Override
 	public void onInitialize() {
 	}

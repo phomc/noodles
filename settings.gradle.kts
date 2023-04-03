@@ -10,4 +10,6 @@ pluginManagement {
 
 rootProject.name = "noodles"
 
-include("noodles-core")
+include("noodles-api")
+
+include("noodles-common")

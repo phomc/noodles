@@ -100,13 +100,7 @@ subprojects {
     publishing {
         publications {
             register("mavenJava", MavenPublication::class) {
-                artifact(tasks.remapJar) {
-                    builtBy(tasks.remapJar)
-                }
-
-                artifact(tasks.remapSourcesJar) {
-                    builtBy(tasks.remapSourcesJar)
-                }
+                from(components["java"])
             }
         }
     }

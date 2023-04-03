@@ -1,3 +1,7 @@
+loom {
+    accessWidenerPath.set(file("src/main/resources/noodles-api.accesswidener"))
+}
+
 dependencies {
 
     // MixinExtras
