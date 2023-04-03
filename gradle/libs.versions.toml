@@ -17,7 +17,7 @@ minecraft = { group = "com.mojang", name = "minecraft", version.ref = "minecraft
 fabric-api = { group = "net.fabricmc.fabric-api", name = "fabric-api", version.ref = "fabric-api" }
 fabric-loader = { group = "net.fabricmc", name = "fabric-loader", version.ref = "fabric-loader" }
 
-mixinextras = { group = "com.github.LlamaLad7.MixinExtras", name = "mixinextras-common", version.ref = "mixinextras" }
+mixinextras = { group = "com.github.LlamaLad7.MixinExtras", name = "mixinextras-fabric", version.ref = "mixinextras" }
 
 [plugins]
 fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }
