@@ -29,40 +29,52 @@ public interface NoodlesExplosion {
 	 *
 	 * @return true if the explosion will affect the source entity, false otherwise
 	 */
-	boolean isAffectSourceEntity();
+	default boolean isAffectSourceEntity() {
+		return true;
+	}
 
 	/**
 	 * Sets whether the explosion will affect the source entity.
 	 *
 	 * @param affectSourceEntity true if the explosion will affect the source entity, false otherwise
 	 */
-	void setAffectSourceEntity(boolean affectSourceEntity);
+	default void setAffectSourceEntity(boolean affectSourceEntity) {
+		throw new UnsupportedOperationException("Cannot set affect source entity on this explosion");
+	}
 
 	/**
 	 * Whether the explosion will affect entities.
 	 *
 	 * @return true if the explosion will affect entities, false otherwise
 	 */
-	boolean isAffectEntities();
+	default boolean isAffectEntities() {
+		return true;
+	}
 
 	/**
 	 * Sets whether the explosion will affect entities.
 	 *
 	 * @param affectEntities true if the explosion will affect entities, false otherwise
 	 */
-	void setAffectEntities(boolean affectEntities);
+	default void setAffectEntities(boolean affectEntities) {
+		throw new UnsupportedOperationException("Cannot set affect entities on this explosion");
+	}
 
 	/**
 	 * Whether the explosion will affect players.
 	 *
 	 * @return true if the explosion will affect players, false otherwise
 	 */
-	boolean isAffectPlayers();
+	default boolean isAffectPlayers() {
+		return true;
+	}
 
 	/**
 	 * Sets whether the explosion will affect players.
 	 *
 	 * @param affectPlayers true if the explosion will affect players, false otherwise
 	 */
-	void setAffectPlayers(boolean affectPlayers);
+	default void setAffectPlayers(boolean affectPlayers) {
+		throw new UnsupportedOperationException("Cannot set affect players on this explosion");
+	}
 }
